@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente/Degrade</title>
+    <style>
+        /* Configuração Global das CSS, para retirar o zebrado */
+        *{
+            height: 100%;
+        }
+
+        body {
+            /* Degradê pra cima, mas ele irá aparecer zebrado. Para corrigir é necessário fazer uma configuração GLOBAL na CSS */
+            background-image: linear-gradient(to top, white, blue);
+            
+            /* Fixar o degradê na tela, senão ao rolar o scrow ele sobe */
+            background-attachment: fixed;
+            
+            /* Degradê para baixo = to botton */
+            background-image: linear-gradient(to bottom, white, blue);
+            background-attachment: fixed;
+        }
+
+        /* Medidas absolutas: cm, mm, px, pt, in = polegadas, pc = paica */
+        /* Medidas relativas: em, ex, rem, vw = largura da view report, vh = altura da view report (são medidas de %) */
+
+        /* Obs: A W#C recomenda o uso das medidas (px, em) lembrando que um site padrão utiliza 16px ou 1em */
+        /* 1em é do tamanho de 16px. 2em é o dobro de 16px */
+        </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

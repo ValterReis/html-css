@@ -1,0 +1,31 @@
+@charset "UTF=8";
+
+/* 
+    em HTML é id    = em CSS é # (Só pode usar em um elemento em cada documento)
+    em HTML é class = em CSS é . (Pode usar em vários elementos na mesma página e em vários documentos)
+*/
+
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+/* pode ser usando assim #principal */
+h1#principal {
+    text-align: center;
+    background-color: yellow;
+    color: white;
+}
+
+h2 {
+    color: rgb(73, 109, 71)
+}
+
+/* h2.basico = pode ser usado sem informar a tag que no caso é h2. */
+.basico{
+    background-color: blue;
+}

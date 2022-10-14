@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Level</title>
+    <style>
+        h1 { /* box-level */
+
+            /* display: inline; (Para transformar em inline-level usar o comando display: inline)*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+                margin: auto;                - centraliza a caixa na tela
+                margin: 20px auto 20px auto; - centralizando as margens direita e esquerda
+            */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /* outline: 10px dashed blue; - simplificando a linha abaixo */
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: blue;
+        }
+
+        a { /* Inline-level */
+            /* Resumo dos comandos padding e border */
+            /* border: 10px groove red; */
+            /* display: block; (Para transformar em block)*/
+            border-width: 10px;
+            border-style: groove;
+            border-color: red;
+
+            /* 
+                padding 10px 10 px 10px 10px - quando coloca 4 valores são top, right, bottom e left
+                padding: 10px;               - representa os 4 valores
+                padding: 10px 20px           - o 1º representa top e bottom e o 2º right e left
+             */
+            padding-top: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <!-- usamos a '#' dentro do link (href="#") para deixá-lo como ativo-->
+    <p>Parágrafos também são exemplode de box-level, mas os <a href="#">links são exemlo de caixas inline-level</a> ".vamos ver como funciona."</p>
+</body>
+</html>

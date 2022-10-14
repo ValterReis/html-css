@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links com pseudo-classe</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red; /*Configuração Genérica do Link, mundando p/ vermelho */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue; /*Alterar cor do Link ao ser visitado*/
+        }
+
+        a:hover {
+            color: black; /*Alterando para preto ao passar o mouse sobre o Link */
+            text-decoration: underline; /* Adicionado underline ao passar o mouse sobre o Link */
+        }
+
+        a:active { /*Um link ativo é quando ele é clicado*/
+            color: yellow; /*Alterando a cor do Link ao ser clicado*/
+        }
+
+        a::after{
+            /*Utilizando o pseudo-elemento "::" informamos no final do conteúdo que é um link*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links   </h1>
+
+    <li> <a href="https://github.com/gustavoguanabara" target="_blank">GitHub</a></li>
+    <li> <a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+    <li> <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">YouTube</a></li>    
+</body>
+</html>
