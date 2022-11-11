@@ -17,6 +17,15 @@
             background-color: lightgray;
         }
 
+        /* 
+        Efeito zebrado na tabela de duas em duas 2n.
+        Podemos usar as palavras par (even) e ímpares (odd) e assim mudar a sequência do efeito zebrado
+        Podemos usar (2n), (2n-1), (odd), (even)
+        */
+        tbody > tr:nth-child(2n) {
+            background-color: lightblue;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
